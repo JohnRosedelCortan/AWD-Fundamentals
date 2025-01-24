@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 1: Programming Fundamentals</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #ff5e00, #002fff);
+      color: #fff;
+      padding: 20px;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #ff5e00;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    button:hover {
+      background-color: #000000;
+      transform: scale(1.05);
+    }
+
+    #demoSection {
+      display: none;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+    }
+
+    h2, h3 {
+      margin: 15px 0;
+      font-weight: normal;
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      width: 80%;
+      max-width: 300px;
+      font-size: 1rem;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    input::placeholder {
+      color: #f8f8f8;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 1.2rem;
+      color: #f8f8f8;
+    }
+  </style>
+</head>
+<body>
+  <h1>Activity 1: Programming Fundamentals</h1>
+  <button id="startDemo">Start the Demo</button>
+
+  <section id="demoSection">
+    <h2>JavaScript Fundamentals Demo</h2>
+    <div>
+      <h3>Variables & Input/Output</h3>
+      <p>Hi there! What's your coding name?</p>
+      <input type="text" id="nameInput" placeholder="Your name" />
+      <button id="greetButton">Greet Me</button>
+      <p id="greetingOutput"></p>
+    </div>
+
+    <div>
+      <h3>Conditionals</h3>
+      <p>Pick a number: Is it odd or even?</p>
+      <input type="number" id="numberInput" placeholder="Your number" />
+      <button id="checkButton">Check</button>
+      <p id="conditionOutput"></p>
+    </div>
+
+    <div>
+      <h3>Looping</h3>
+      <p>Let's add them up! Enter a number and see the magic of summation.</p>
+      <input type="number" id="sumInput" placeholder="Your number" />
+      <button id="calculateButton">Calculate</button>
+      <p id="loopOutput"></p>
+    </div>
+
+    <button id="backButton">Back to Landing Page</button>
+  </section>
+
+  <script src="CortanDemo.js"></script>
+</body>
+</html>
